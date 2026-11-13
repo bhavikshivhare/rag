@@ -1,0 +1,15 @@
+# Model registry. The code never hard-codes model names; anything here can be
+# selected per experiment.
+
+models:
+  embedding_models:
+    - BAAI/bge-small-en-v1.5
+    - sentence-transformers/all-MiniLM-L6-v2
+
+  reranker_models:
+    - BAAI/bge-reranker-base
+
+  llms:
+    - Qwen/Qwen2.5-0.5B-Instruct
+    - Qwen/Qwen2.5-1.5B-Instruct
+    - mistralai/Mistral-7B-Instruct-v0.3

@@ -1,0 +1,44 @@
+# Evaluation configuration: weighted score, pass thresholds, LLM-as-a-judge,
+# and optional DeepEval integration.
+
+evaluation:
+  weights:
+    faithfulness: 0.30
+    answer_relevancy: 0.20
+    context_recall: 0.20
+    context_precision: 0.15
+    correctness: 0.15
+
+  thresholds:
+    retrieval_hit_similarity: 0.35
+    faithfulness: 0.60
+    answer_relevancy: 0.55
+    correctness: 0.55
+    context_recall: 0.50
+    overall_pass: 0.60
+
+  reference_similarity: 0.65
+
+  judge:
+    enabled: true
+    provider: hf_local
+    model: Qwen/Qwen2.5-0.5B-Instruct
+    temperature: 0.0
+    max_new_tokens: 320
+    criteria:
+      - correctness
+      - completeness
+      - groundedness
+      - clarity
+      - conciseness
+
+  deepeval:
+    enabled: false
+    judge_provider: local
+    model: gpt-4o-mini
+    api_key_env: OPENAI_API_KEY
+    thresholds:
+      faithfulness: 0.70
+      answer_relevancy: 0.70
+      contextual_relevancy: 0.70
+      contextual_recall: 0.70

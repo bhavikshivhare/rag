@@ -1,0 +1,29 @@
+# EXP-001 — baseline reference run: vector-only retrieval, v1 prompt, no reranking.
+# Everything here deep-merges over configs/config.yaml.
+
+experiment:
+  experiment_id: EXP-001
+  name: Baseline vector RAG
+  description: >-
+    Vector-only retrieval over FAISS, plain v1 prompt, no BM25, no reranking.
+    This is the reference point every later change is measured against.
+  dataset_path: data/datasets/benchmark_v1.jsonl
+  dataset_version: v1
+
+retrieval:
+  strategy: vector
+  top_k: 5
+  candidate_k: 20
+
+bm25:
+  enabled: false
+
+hybrid:
+  enabled: false
+
+reranker:
+  enabled: false
+
+generation:
+  prompt_version: v1
+  context_chunks: 5

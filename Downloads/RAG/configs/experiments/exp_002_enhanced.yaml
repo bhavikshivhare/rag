@@ -1,0 +1,40 @@
+# EXP-002 — enhancement bundle applied on top of the EXP-001 baseline:
+#   1. hybrid retrieval  = BM25 + vector, fused with reciprocal rank fusion
+#   2. prompt v2         = strict grounding + explicit refusal instruction + citations
+#   3. reranker          = cross-encoder over the top 20 candidates -> final top 5
+# Everything else (corpus, chunking, embeddings, generator, dataset) is unchanged.
+
+experiment:
+  experiment_id: EXP-002
+  name: Enhanced hybrid RAG (BM25 + prompt v2 + reranker)
+  description: >-
+    Hybrid BM25+vector retrieval with reciprocal rank fusion, grounded prompt v2 with a
+    refusal path, and cross-encoder reranking of the top 20 candidates down to 5.
+  dataset_path: data/datasets/benchmark_v1.jsonl
+  dataset_version: v1
+
+retrieval:
+  strategy: hybrid
+  top_k: 5
+  candidate_k: 20
+
+bm25:
+  enabled: true
+  k1: 1.5
+  b: 0.75
+
+hybrid:
+  enabled: true
+  fusion: rrf
+  rrf_k: 60
+  vector_weight: 0.6
+  bm25_weight: 0.4
+
+reranker:
+  enabled: true
+  model: BAAI/bge-reranker-base
+  top_n: 5
+
+generation:
+  prompt_version: v2
+  context_chunks: 5

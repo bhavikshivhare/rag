@@ -1,0 +1,2894 @@
+[
+  {
+    "question_id": "Q001",
+    "question": "What is the price of the Growth plan and how many seats does it include?",
+    "ground_truth": "The Growth plan costs $199 per month and includes 25 seats.",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_context": [
+      "pricing"
+    ],
+    "answer": "The price of the Growth plan is $199 per month and it includes 25 seats.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.25,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7736673355102539,
+      "correctness": 0.9267893516499063,
+      "token_f1": 0.7826086956521738,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:49:12.857822Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.5,
+          "reason": "The reference answer correctly states that the Growth plan costs $199 per month and includes 25 seats.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.5,
+          "reason": "The reference answer provides all necessary information about the growth plan including its monthly cost and number of seats.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.5,
+          "reason": "The reference answer supports its claims with accurate data from the given context.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.5,
+          "reason": "The reference answer is well-organized and easy to understand.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.5,
+          "reason": "The reference answer is concise and doesn't contain unnecessary details.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9437518698495369,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7736673355102539,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.9267893516499063
+    },
+    "passed": true,
+    "latency_ms": 25185.56259991601,
+    "retrieval_latency_ms": 16342.068300000392,
+    "rerank_latency_ms": 5343.6074000783265,
+    "generation_latency_ms": 8843.408000073396,
+    "retrieved_ids": [
+      "pricing#f7d26ead83",
+      "pricing#b15e74a0a2",
+      "support_sla#8e480c6fac",
+      "onboarding_migration#0fc5586768",
+      "data_retention#e1be8f420d"
+    ],
+    "retrieved_sources": [
+      "pricing / Plans",
+      "pricing / Additional seats",
+      "support_sla / Support tiers",
+      "onboarding_migration / Standard onboarding",
+      "data_retention / Audit logs"
+    ],
+    "contexts": [
+      "Plans\n\nThe Starter plan costs $49 per month and includes 5 seats, 10,000 API calls per month, and 10 GB of storage.\n\nThe Growth plan costs $199 per month and includes 25 seats, 100,000 API calls per month, and 100 GB of storage.\n\nThe Enterprise plan uses custom pricing negotiated per contract. Enterprise includes unlimited seats, a negotiated API quota, dedicated infrastructure options, and a designated solutions engineer.",
+      "Additional seats\n\nOn the Growth plan, additional seats beyond the included 25 cost $12 per seat per month.",
+      "Support tiers\n\nStandard support is included with Starter and Growth plans. Premium support costs 15 percent of the annual contract value. Enterprise plans include 24/7 support at no additional charge.",
+      "Standard onboarding\n\nA Growth customer typically completes standard onboarding in 2 weeks. The process covers workspace configuration, connector setup, first dashboard, and a team handover session.\n\nEnterprise onboarding typically takes 4 to 6 weeks and includes architecture review, security review, and a staged rollout plan.",
+      "Audit logs\n\nAudit logs are retained for 12 months on the Enterprise plan. Starter and Growth workspaces retain audit logs for 90 days."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q002",
+    "question": "How many days do customers have to request a refund after their initial purchase?",
+    "ground_truth": "Customers can request a refund within 30 days of their initial purchase.",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_context": [
+      "refund_policy"
+    ],
+    "answer": "Customers can request a refund within 30 days of their initial purchase.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9051172846415896,
+      "correctness": 1.0,
+      "token_f1": 1.0,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:49:36.766047Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "Correctly states that customers can request a refund within 30 days of their initial purchase.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "Provides all necessary information about the refund process.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "Supports the given context with accurate information.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "Well-organized text with clear instructions.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "Concise and to the point, providing all relevant details.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.981023456928318,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9051172846415896,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 1.0
+    },
+    "passed": true,
+    "latency_ms": 6858.598900027573,
+    "retrieval_latency_ms": 2396.2217000080273,
+    "rerank_latency_ms": 2351.7207000404596,
+    "generation_latency_ms": 4462.34050008934,
+    "retrieved_ids": [
+      "refund_policy#8c94666355",
+      "refund_policy#a343c07db2",
+      "data_retention#f8c180a153",
+      "refund_policy#7a5701e451",
+      "data_retention#9e386dddc7"
+    ],
+    "retrieved_sources": [
+      "refund_policy / Refund window",
+      "refund_policy / Processing time",
+      "data_retention / Deletion requests",
+      "refund_policy / Downgrades and cancellations",
+      "data_retention / After cancellation"
+    ],
+    "contexts": [
+      "Refund window\n\nCustomers can request a refund within 30 days of their initial purchase. The 30 day window starts on the date the first invoice is paid.\n\nFor annual plans, a pro-rated refund is also available within 30 days of an annual renewal date.",
+      "Processing time\n\nApproved refunds are returned to the original payment method within 7 to 10 business days. Northwind cannot issue refunds to a different card or bank account.",
+      "Deletion requests\n\nCustomers can submit a right-to-erasure request from the workspace settings page. Verified erasure requests are completed within 14 days, except where a legal hold or statutory retention obligation applies.",
+      "Downgrades and cancellations\n\nDowngrades take effect at the next renewal date and do not produce a partial refund for the current period. Cancellations stop future billing but do not refund the current billing period unless the request falls inside the 30 day refund window.",
+      "After cancellation\n\nWhen a subscription is cancelled, the workspace is placed in a read-only state for 30 days. Customer data is permanently deleted 30 days after the cancellation date. During the 30 day window the customer can export data or reactivate the subscription."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q003",
+    "question": "What encryption is used for customer data at rest?",
+    "ground_truth": "Customer data is encrypted at rest using AES-256.",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_context": [
+      "security_compliance"
+    ],
+    "answer": "Encryption is used at rest by AES-256.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.3333333333333333,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8156813383102417,
+      "correctness": 0.7991951620578766,
+      "token_f1": 0.5333333333333333,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:49:59.601572Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.75,
+          "reason": "The answer correctly states that AES-256 is used at rest.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.75,
+          "reason": "The answer provides all necessary information about the encryption method.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.75,
+          "reason": "The answer supports the provided context with accurate details.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.75,
+          "reason": "The answer is well-organized and easy to understand.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.75,
+          "reason": "The answer is concise and doesn't contain unnecessary details.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9330155419707299,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8156813383102417,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.7991951620578766
+    },
+    "passed": true,
+    "latency_ms": 6470.859099994414,
+    "retrieval_latency_ms": 2934.3174000969157,
+    "rerank_latency_ms": 2909.544499940239,
+    "generation_latency_ms": 3536.5098000038415,
+    "retrieved_ids": [
+      "security_compliance#0835ce66ab",
+      "data_retention#99fe317855",
+      "data_retention#a48f187806",
+      "data_retention#9e386dddc7",
+      "integrations#785e0d6304"
+    ],
+    "retrieved_sources": [
+      "security_compliance / Encryption",
+      "data_retention / Backups",
+      "data_retention / Active accounts",
+      "data_retention / After cancellation",
+      "integrations / Connector permissions"
+    ],
+    "contexts": [
+      "Encryption\n\nCustomer data is encrypted at rest using AES-256. Data in transit is protected with TLS 1.3. Encryption keys are managed in a dedicated key management service and rotated every 90 days.",
+      "Backups\n\nEncrypted backups are retained for 35 days on a rolling basis. Backups are stored in the same region as the workspace. Deleted customer data ages out of backups within the 35 day retention period and is not restored on request.",
+      "Active accounts\n\nCustomer data is retained for as long as the subscription is active. There is no automatic purging of active workspace data.",
+      "After cancellation\n\nWhen a subscription is cancelled, the workspace is placed in a read-only state for 30 days. Customer data is permanently deleted 30 days after the cancellation date. During the 30 day window the customer can export data or reactivate the subscription.",
+      "Connector permissions\n\nConnectors use scoped credentials. Northwind recommends a read-only service account for warehouse connectors. Credentials are stored encrypted and are never displayed after they are saved."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q004",
+    "question": "What is the default API rate limit for a Growth workspace?",
+    "ground_truth": "Growth workspaces receive 1,200 requests per minute.",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_context": [
+      "api_limits"
+    ],
+    "answer": "The default rate limit for a Growth workspace is 1,200 requests per minute.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.25,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7765769958496094,
+      "correctness": 0.7933418075243631,
+      "token_f1": 0.5555555555555556,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:50:33.363219Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.5,
+          "reason": "The reference answer provides the correct number of requests per minute but does not mention the default rate limit.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.5,
+          "reason": "The reference answer contains all necessary information about the default rate limit but lacks some specific details like burst traffic allowance.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.5,
+          "reason": "The reference answer supports the general idea that the default rate limit is 1,200 requests per minute but does not provide additional context or specifics.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.5,
+          "reason": "The reference answer is clear and well-organized, but it could benefit from more detailed explanations of the burst traffic allowance.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.5,
+          "reason": "The reference answer is concise but lacks specific details about the burst traffic allowance.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9243166702985763,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7765769958496094,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.7933418075243631
+    },
+    "passed": true,
+    "latency_ms": 7928.472400060855,
+    "retrieval_latency_ms": 2975.8305000141263,
+    "rerank_latency_ms": 2944.8296000482515,
+    "generation_latency_ms": 4952.590400003828,
+    "retrieved_ids": [
+      "api_limits#d6bf375fa3",
+      "pricing#600ad58452",
+      "data_retention#e1be8f420d",
+      "onboarding_migration#0fc5586768",
+      "pricing#f7d26ead83"
+    ],
+    "retrieved_sources": [
+      "api_limits / Request limits",
+      "pricing / Usage overage",
+      "data_retention / Audit logs",
+      "onboarding_migration / Standard onboarding",
+      "pricing / Plans"
+    ],
+    "contexts": [
+      "Request limits\n\nThe default rate limit is 600 requests per minute per API key. Growth workspaces receive 1,200 requests per minute. Enterprise workspaces receive a custom limit defined in the contract.\n\nBurst traffic is allowed up to 100 requests per second for short intervals.",
+      "Usage overage\n\nAPI calls beyond the plan quota are billed at $0.002 per call. Overage is metered continuously and billed monthly in arrears, regardless of whether the subscription itself is billed monthly or annually.",
+      "Audit logs\n\nAudit logs are retained for 12 months on the Enterprise plan. Starter and Growth workspaces retain audit logs for 90 days.",
+      "Standard onboarding\n\nA Growth customer typically completes standard onboarding in 2 weeks. The process covers workspace configuration, connector setup, first dashboard, and a team handover session.\n\nEnterprise onboarding typically takes 4 to 6 weeks and includes architecture review, security review, and a staged rollout plan.",
+      "Plans\n\nThe Starter plan costs $49 per month and includes 5 seats, 10,000 API calls per month, and 10 GB of storage.\n\nThe Growth plan costs $199 per month and includes 25 seats, 100,000 API calls per month, and 100 GB of storage.\n\nThe Enterprise plan uses custom pricing negotiated per contract. Enterprise includes unlimited seats, a negotiated API quota, dedicated infrastructure options, and a designated solutions engineer."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q005",
+    "question": "How long are encrypted backups retained?",
+    "ground_truth": "Encrypted backups are retained for 35 days on a rolling basis.",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_context": [
+      "data_retention"
+    ],
+    "answer": "Encrypted backups are retained for 35 days on a rolling basis.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.3333333333333333,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.843989660977701,
+      "correctness": 1.0,
+      "token_f1": 1.0,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:50:58.675906Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "The answer correctly states that encrypted backups are retained for 35 days on a rolling basis.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "The answer provides all necessary information about the retention period.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "The answer supports its claims with accurate references to industry standards and best practices.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "The answer is well-organized and easy to understand.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "The answer is concise and to the point, providing all relevant information in a single sentence.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9687979321955402,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.843989660977701,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 1.0
+    },
+    "passed": true,
+    "latency_ms": 6274.832600029185,
+    "retrieval_latency_ms": 2150.8270000340417,
+    "rerank_latency_ms": 2123.741199960932,
+    "generation_latency_ms": 4123.971700086258,
+    "retrieved_ids": [
+      "data_retention#99fe317855",
+      "security_compliance#0835ce66ab",
+      "data_retention#f8c180a153",
+      "security_compliance#582eef1abb",
+      "integrations#c965b83a71"
+    ],
+    "retrieved_sources": [
+      "data_retention / Backups",
+      "security_compliance / Encryption",
+      "data_retention / Deletion requests",
+      "security_compliance / Audit logs",
+      "integrations / Webhooks"
+    ],
+    "contexts": [
+      "Backups\n\nEncrypted backups are retained for 35 days on a rolling basis. Backups are stored in the same region as the workspace. Deleted customer data ages out of backups within the 35 day retention period and is not restored on request.",
+      "Encryption\n\nCustomer data is encrypted at rest using AES-256. Data in transit is protected with TLS 1.3. Encryption keys are managed in a dedicated key management service and rotated every 90 days.",
+      "Deletion requests\n\nCustomers can submit a right-to-erasure request from the workspace settings page. Verified erasure requests are completed within 14 days, except where a legal hold or statutory retention obligation applies.",
+      "Audit logs\n\nEnterprise workspaces have access to audit logs covering authentication, permission changes, exports, and API key usage. Audit logs are retained for 12 months.",
+      "Webhooks\n\nOutbound webhooks are delivered with at least once semantics. Failed deliveries are retried 5 times using exponential backoff over a period of up to 30 minutes. After the final retry the event is marked as failed and can be replayed manually for 7 days."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q006",
+    "question": "What is the first response target for a P1 issue under Enterprise support?",
+    "ground_truth": "Enterprise support has a P1 first response target of 30 minutes.",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_context": [
+      "support_sla"
+    ],
+    "answer": "The first response target for a P1 issue under Enterprise support is 30 minutes.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8470401167869568,
+      "correctness": 0.8982981437986547,
+      "token_f1": 0.7272727272727272,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:51:30.803463Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "The answer correctly states that the first response target for a P1 issue under Enterprise support is 30 minutes.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "The answer provides a complete list of factors related to the first response target for a P1 issue under Enterprise support.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "The answer supports the information provided by the reference answer by stating it's based on correct references.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "The answer is clear and organized, with no unnecessary words or repetitions.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "The answer is concise and to the point, providing all necessary information in a single sentence.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9541527449271896,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8470401167869568,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.8982981437986547
+    },
+    "passed": true,
+    "latency_ms": 8118.449699948542,
+    "retrieval_latency_ms": 3310.382999945432,
+    "rerank_latency_ms": 3280.5645000189543,
+    "generation_latency_ms": 4808.020299999043,
+    "retrieved_ids": [
+      "support_sla#ba317494d0",
+      "support_sla#f492ef3a7e",
+      "support_sla#01639a5b09",
+      "support_sla#1f24c6da80",
+      "security_compliance#b2ce5dda13"
+    ],
+    "retrieved_sources": [
+      "support_sla / Response targets",
+      "support_sla / Escalation",
+      "support_sla / Coverage hours",
+      "support_sla / Severity definitions",
+      "security_compliance / Authentication"
+    ],
+    "contexts": [
+      "Response targets\n\nFor Standard support, the first response target is 8 business hours for a P1 issue, 1 business day for P2, and 3 business days for P3.\n\nFor Premium support, the first response target is 1 hour for P1, 4 hours for P2, and 1 business day for P3.\n\nFor Enterprise support, the first response target is 30 minutes for P1, 2 hours for P2, and 8 business hours for P3.",
+      "Escalation\n\nA ticket automatically escalates to the on-call engineer when 50 percent of its response target has elapsed without a first response. Customers can also request escalation from the support portal.",
+      "Coverage hours\n\nStandard support is staffed 9:00 to 18:00 Eastern Time on weekdays, excluding public holidays.\n\nPremium support is staffed 24 hours a day on weekdays and 8 hours on weekends.\n\nEnterprise support is staffed 24 hours a day, 7 days a week, including holidays.",
+      "Severity definitions\n\nP1 means the production service is unavailable or customer data loss has occurred. P2 means the service is significantly degraded but still usable. P3 means a question, documentation request, or minor defect.",
+      "Authentication\n\nSingle sign-on is supported through SAML 2.0 and OpenID Connect. SCIM 2.0 user provisioning is available on the Enterprise plan only.\n\nMulti-factor authentication is mandatory for all administrator accounts and optional for standard users."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q007",
+    "question": "What is the maximum page size for cursor-based paginated list endpoints?",
+    "ground_truth": "The maximum page size is 200 records.",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_context": [
+      "api_limits"
+    ],
+    "answer": "The maximum page size for cursor-based paginated list endpoints is 50 records.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.864681677260199,
+      "correctness": 0.7605089192625241,
+      "token_f1": 0.5882352941176471,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:52:02.776727Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.75,
+          "reason": "The correct answer states \"The maximum page size is 200 records,\" which is incorrect as it should be \"the maximum page size is 50 records.\"",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.0,
+          "reason": "The answer does not provide any information about the maximum page size for cursor-based paginated list endpoints.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.0,
+          "reason": "The answer relies on a fact provided in the reference answer but does not substantiate it.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.0,
+          "reason": "The answer is unclear and lacks specificity.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.0,
+          "reason": "The answer is concise but lacks depth.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9370126733414184,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.864681677260199,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.7605089192625241
+    },
+    "passed": true,
+    "latency_ms": 7992.085100035183,
+    "retrieval_latency_ms": 3029.7263000393286,
+    "rerank_latency_ms": 2997.7202999871224,
+    "generation_latency_ms": 4962.224500020966,
+    "retrieved_ids": [
+      "api_limits#bd51161656",
+      "api_limits#ddcb0489ac",
+      "release_notes_v3_2#c8f34ac5da",
+      "api_limits#782c316699",
+      "release_notes_v3_2#4efa809335"
+    ],
+    "retrieved_sources": [
+      "api_limits / Pagination",
+      "api_limits / Payload and timeout limits",
+      "release_notes_v3_2 / p.1",
+      "api_limits / Batch endpoints",
+      "release_notes_v3_2 / p.1"
+    ],
+    "contexts": [
+      "Pagination\n\nList endpoints use cursor-based pagination. The maximum page size is 200 records. A default page size of 50 records applies when the page size parameter is omitted.",
+      "Payload and timeout limits\n\nThe maximum request payload size is 10 MB. Synchronous requests time out after 30 seconds. Long-running exports must use the asynchronous job endpoint.",
+      "maximum allowed value is 30 days.\nPerformance\nMedian dashboard query latency improved by 22 percent in this release, primarily from a new query\nplanner and a larger vector cache.\nDeprecations and breaking changes\nThe /v1/search endpoint is deprecated and is replaced by /v2/query. API v1 sunsets on 2026-12-31.\nIntegrations that still call /v1/search must migrate before that date.",
+      "Batch endpoints\n\nThe batch ingestion endpoint accepts up to 500 records per request. Larger imports must be split into multiple batch calls or submitted through the bulk import job API.",
+      "Northwind Analytics Release Notes v3.2\nRelease date: 2026-08-18\nHybrid search\nVersion 3.2 introduces hybrid retrieval, combining BM25 keyword matching with vector similarity search\nand fusing both ranked lists. Hybrid search improves recall on queries that contain product codes, error\nidentifiers, or rare terms.\nAudit log export\nEnterprise administrators can now export audit logs to an Amazon S3 bucket on a daily, weekly, or\nmonthly schedule.\nSSO session timeout\nThe SSO session timeout is now configurable per workspace. The default value is 12 hours and the\nmaximum allowed value is 30 days.\nPerformance"
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q008",
+    "question": "How often do warehouse connectors run incremental syncs?",
+    "ground_truth": "Warehouse connectors run incremental syncs every 15 minutes.",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_context": [
+      "integrations"
+    ],
+    "answer": "Warehouse connectors run incremental syncs every 15 minutes.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8728403600644636,
+      "correctness": 1.0,
+      "token_f1": 1.0,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:52:25.191081Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "Correctly states that warehouse connectors run incremental syncs every 15 minutes.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "Provides all necessary information about the frequency of incremental syncs for warehouse connectors.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "Uses accurate and relevant information from the provided context.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "Well-organized text with no errors.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "Concise and to the point, providing all required information efficiently.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9745680720128929,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8728403600644636,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 1.0
+    },
+    "passed": true,
+    "latency_ms": 7742.7814999828115,
+    "retrieval_latency_ms": 3703.703899984248,
+    "rerank_latency_ms": 3667.8064999869093,
+    "generation_latency_ms": 4039.048400009051,
+    "retrieved_ids": [
+      "integrations#d0aacde2b0",
+      "integrations#951051f74a",
+      "onboarding_migration#0fc5586768",
+      "integrations#785e0d6304",
+      "onboarding_migration#5c5948273d"
+    ],
+    "retrieved_sources": [
+      "integrations / Warehouse sync schedule",
+      "integrations / Native connectors",
+      "onboarding_migration / Standard onboarding",
+      "integrations / Connector permissions",
+      "onboarding_migration / Cutover"
+    ],
+    "contexts": [
+      "Warehouse sync schedule\n\nWarehouse connectors run incremental syncs every 15 minutes. A full refresh runs nightly. Customers can trigger a manual sync from the connector settings page, subject to a limit of 4 manual syncs per hour.",
+      "Native connectors\n\nNorthwind Analytics provides more than 40 native connectors. Core data warehouse connectors include Snowflake, BigQuery, Redshift, and PostgreSQL.\n\nBusiness application connectors include Salesforce, HubSpot, and Shopify. A Zapier connector is available in beta and is not covered by the uptime commitment.",
+      "Standard onboarding\n\nA Growth customer typically completes standard onboarding in 2 weeks. The process covers workspace configuration, connector setup, first dashboard, and a team handover session.\n\nEnterprise onboarding typically takes 4 to 6 weeks and includes architecture review, security review, and a staged rollout plan.",
+      "Connector permissions\n\nConnectors use scoped credentials. Northwind recommends a read-only service account for warehouse connectors. Credentials are stored encrypted and are never displayed after they are saved.",
+      "Cutover\n\nNorthwind recommends running the legacy system in parallel for at least 2 weeks before retiring it. There is no automatic cutover; the customer decides the go-live date."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q009",
+    "question": "How long does standard onboarding take for a Growth customer?",
+    "ground_truth": "Standard onboarding for a Growth customer typically takes 2 weeks.",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_context": [
+      "onboarding_migration"
+    ],
+    "answer": "Standard onboarding for a Growth customer typically takes 2 weeks.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.3333333333333333,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9325271844863892,
+      "correctness": 1.0,
+      "token_f1": 1.0,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:52:43.792697Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "Correctly states that standard onboarding for a Growth customer typically takes 2 weeks.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "Provides all necessary information about standard onboarding duration.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "Uses accurate data from the given reference answer.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "Well-organized text with no errors.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "Concise and to the point, providing all relevant details.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9865054368972779,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9325271844863892,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 1.0
+    },
+    "passed": true,
+    "latency_ms": 5733.771000057459,
+    "retrieval_latency_ms": 2304.702299996279,
+    "rerank_latency_ms": 2282.545000081882,
+    "generation_latency_ms": 3429.0344999171793,
+    "retrieved_ids": [
+      "onboarding_migration#0fc5586768",
+      "onboarding_migration#8757a14786",
+      "support_sla#8e480c6fac",
+      "support_sla#ba317494d0",
+      "api_limits#d6bf375fa3"
+    ],
+    "retrieved_sources": [
+      "onboarding_migration / Standard onboarding",
+      "onboarding_migration / Dedicated resources",
+      "support_sla / Support tiers",
+      "support_sla / Response targets",
+      "api_limits / Request limits"
+    ],
+    "contexts": [
+      "Standard onboarding\n\nA Growth customer typically completes standard onboarding in 2 weeks. The process covers workspace configuration, connector setup, first dashboard, and a team handover session.\n\nEnterprise onboarding typically takes 4 to 6 weeks and includes architecture review, security review, and a staged rollout plan.",
+      "Dedicated resources\n\nEnterprise customers receive a designated solutions engineer during onboarding and for the first 90 days after go-live.",
+      "Support tiers\n\nStandard support is included with Starter and Growth plans. Premium support costs 15 percent of the annual contract value. Enterprise plans include 24/7 support at no additional charge.",
+      "Response targets\n\nFor Standard support, the first response target is 8 business hours for a P1 issue, 1 business day for P2, and 3 business days for P3.\n\nFor Premium support, the first response target is 1 hour for P1, 4 hours for P2, and 1 business day for P3.\n\nFor Enterprise support, the first response target is 30 minutes for P1, 2 hours for P2, and 8 business hours for P3.",
+      "Request limits\n\nThe default rate limit is 600 requests per minute per API key. Growth workspaces receive 1,200 requests per minute. Enterprise workspaces receive a custom limit defined in the contract.\n\nBurst traffic is allowed up to 100 requests per second for short intervals."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q010",
+    "question": "What is the monthly uptime commitment and what compensation applies if it is missed?",
+    "ground_truth": "Northwind commits to 99.9 percent monthly uptime and issues a service credit of 10 percent of the monthly fee for each additional 0.5 percent below 99.9 percent.",
+    "category": "factual",
+    "difficulty": "medium",
+    "expected_context": [
+      "support_sla"
+    ],
+    "answer": "The monthly uptime commitment is 99.9 percent, and if it is missed, customers receive a service credit of 10 percent of the monthly fee for each additional 0.5 percent below 99.9 percent.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.3333333333333333,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8099266064079531,
+      "correctness": 0.8311762411103392,
+      "token_f1": 0.7777777777777777,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:53:07.868532Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.5,
+          "reason": "The answer correctly states that Northwind commits to 99.9 percent monthly uptime.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.5,
+          "reason": "The answer provides all necessary information about the monthly uptime commitment and compensation rules.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.5,
+          "reason": "The answer supports its claims with relevant context provided in the reference answer.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.5,
+          "reason": "The answer is well-organized and easy to understand.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.5,
+          "reason": "The answer contains too much information, making it somewhat lengthy.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9366617574481416,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8099266064079531,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.8311762411103392
+    },
+    "passed": true,
+    "latency_ms": 9091.13710001111,
+    "retrieval_latency_ms": 2133.737299940549,
+    "rerank_latency_ms": 2108.717600000091,
+    "generation_latency_ms": 6957.368400064297,
+    "retrieved_ids": [
+      "support_sla#4dd27a921d",
+      "support_sla#01639a5b09",
+      "pricing#a71cba82fc",
+      "refund_policy#116834daa8",
+      "pricing#600ad58452"
+    ],
+    "retrieved_sources": [
+      "support_sla / Uptime commitment",
+      "support_sla / Coverage hours",
+      "pricing / Annual billing",
+      "refund_policy / Exclusions",
+      "pricing / Usage overage"
+    ],
+    "contexts": [
+      "Uptime commitment\n\nNorthwind commits to 99.9 percent monthly uptime for the API and the web application. If monthly uptime falls below this commitment, the customer receives a service credit of 10 percent of the monthly fee for each additional 0.5 percent below 99.9 percent.",
+      "Coverage hours\n\nStandard support is staffed 9:00 to 18:00 Eastern Time on weekdays, excluding public holidays.\n\nPremium support is staffed 24 hours a day on weekdays and 8 hours on weekends.\n\nEnterprise support is staffed 24 hours a day, 7 days a week, including holidays.",
+      "Annual billing\n\nAnnual billing receives a 20 percent discount compared with paying monthly for twelve months. Annual plans are invoiced upfront for the full term.\n\nUsage overage charges are not eligible for the annual discount. Only the base subscription fee is discounted.",
+      "Exclusions\n\nThe following are not refundable: add-on services, professional services engagements, overage charges for API usage, and custom development work.",
+      "Usage overage\n\nAPI calls beyond the plan quota are billed at $0.002 per call. Overage is metered continuously and billed monthly in arrears, regardless of whether the subscription itself is billed monthly or annually."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q011",
+    "question": "How does Premium support differ from Standard support in coverage hours and P1 response time?",
+    "ground_truth": "Standard support is staffed 9:00 to 18:00 Eastern Time on weekdays and targets 8 business hours for P1, while Premium support is staffed 24 hours a day on weekdays and targets 1 hour for P1.",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_context": [
+      "support_sla"
+    ],
+    "answer": "Premium support covers 24 hours a day on weekdays and 8 hours on weekends, while Standard support operates 9:00 to 18:00 Eastern Time on weekdays.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8218955397605896,
+      "correctness": 0.8439220287728356,
+      "token_f1": 0.6896551724137931,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:53:35.762125Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "The answer correctly states that Premium supports operate 24 hours a day on weekdays and 8 hours on weekends, which matches the information provided in the reference answer.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "The answer provides all necessary information about Premium's operating hours, including both weekdays and weekends.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "The answer uses accurate information from the reference answer to support its claims.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "The answer is well-organized and free of unnecessary details.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "The answer is concise and to the point, providing all relevant information in a single sentence.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9409674122680434,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8218955397605896,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.8439220287728356
+    },
+    "passed": true,
+    "latency_ms": 9055.759400012903,
+    "retrieval_latency_ms": 2781.178900040686,
+    "rerank_latency_ms": 2753.64420004189,
+    "generation_latency_ms": 6274.548499961384,
+    "retrieved_ids": [
+      "support_sla#01639a5b09",
+      "support_sla#ba317494d0",
+      "support_sla#8e480c6fac",
+      "support_sla#1f24c6da80",
+      "pricing#a71cba82fc"
+    ],
+    "retrieved_sources": [
+      "support_sla / Coverage hours",
+      "support_sla / Response targets",
+      "support_sla / Support tiers",
+      "support_sla / Severity definitions",
+      "pricing / Annual billing"
+    ],
+    "contexts": [
+      "Coverage hours\n\nStandard support is staffed 9:00 to 18:00 Eastern Time on weekdays, excluding public holidays.\n\nPremium support is staffed 24 hours a day on weekdays and 8 hours on weekends.\n\nEnterprise support is staffed 24 hours a day, 7 days a week, including holidays.",
+      "Response targets\n\nFor Standard support, the first response target is 8 business hours for a P1 issue, 1 business day for P2, and 3 business days for P3.\n\nFor Premium support, the first response target is 1 hour for P1, 4 hours for P2, and 1 business day for P3.\n\nFor Enterprise support, the first response target is 30 minutes for P1, 2 hours for P2, and 8 business hours for P3.",
+      "Support tiers\n\nStandard support is included with Starter and Growth plans. Premium support costs 15 percent of the annual contract value. Enterprise plans include 24/7 support at no additional charge.",
+      "Severity definitions\n\nP1 means the production service is unavailable or customer data loss has occurred. P2 means the service is significantly degraded but still usable. P3 means a question, documentation request, or minor defect.",
+      "Annual billing\n\nAnnual billing receives a 20 percent discount compared with paying monthly for twelve months. Annual plans are invoiced upfront for the full term.\n\nUsage overage charges are not eligible for the annual discount. Only the base subscription fee is discounted."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q012",
+    "question": "Compare the Starter and Growth plans on included seats and monthly API quota.",
+    "ground_truth": "Starter includes 5 seats and 10,000 API calls per month at $49; Growth includes 25 seats and 100,000 API calls per month at $199.",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_context": [
+      "pricing"
+    ],
+    "answer": "The Starter plan includes 25 seats, while the Growth plan includes 25 seats.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7659182827570101,
+      "correctness": 0.6455523324012756,
+      "token_f1": 0.4,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:53:59.277899Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.5,
+          "reason": "The Starter plan includes 25 seats, while the Growth plan includes 25 seats.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.5,
+          "reason": "The answer provides information about both plans but does not cover all aspects mentioned in the reference.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.5,
+          "reason": "The answer relies heavily on specific numbers provided in the reference, which may not be universally applicable.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.5,
+          "reason": "The answer is somewhat unclear due to its focus on specific numbers rather than comprehensive comparisons.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.5,
+          "reason": "The answer is concise but lacks depth compared to the reference's detailed comparison.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9000165064115934,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7659182827570101,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.6455523324012756
+    },
+    "passed": true,
+    "latency_ms": 6640.488100005314,
+    "retrieval_latency_ms": 2712.98900002148,
+    "rerank_latency_ms": 2686.578099965118,
+    "generation_latency_ms": 3927.4643000680953,
+    "retrieved_ids": [
+      "pricing#f7d26ead83",
+      "pricing#b15e74a0a2",
+      "pricing#600ad58452",
+      "support_sla#8e480c6fac",
+      "support_sla#4dd27a921d"
+    ],
+    "retrieved_sources": [
+      "pricing / Plans",
+      "pricing / Additional seats",
+      "pricing / Usage overage",
+      "support_sla / Support tiers",
+      "support_sla / Uptime commitment"
+    ],
+    "contexts": [
+      "Plans\n\nThe Starter plan costs $49 per month and includes 5 seats, 10,000 API calls per month, and 10 GB of storage.\n\nThe Growth plan costs $199 per month and includes 25 seats, 100,000 API calls per month, and 100 GB of storage.\n\nThe Enterprise plan uses custom pricing negotiated per contract. Enterprise includes unlimited seats, a negotiated API quota, dedicated infrastructure options, and a designated solutions engineer.",
+      "Additional seats\n\nOn the Growth plan, additional seats beyond the included 25 cost $12 per seat per month.",
+      "Usage overage\n\nAPI calls beyond the plan quota are billed at $0.002 per call. Overage is metered continuously and billed monthly in arrears, regardless of whether the subscription itself is billed monthly or annually.",
+      "Support tiers\n\nStandard support is included with Starter and Growth plans. Premium support costs 15 percent of the annual contract value. Enterprise plans include 24/7 support at no additional charge.",
+      "Uptime commitment\n\nNorthwind commits to 99.9 percent monthly uptime for the API and the web application. If monthly uptime falls below this commitment, the customer receives a service credit of 10 percent of the monthly fee for each additional 0.5 percent below 99.9 percent."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q013",
+    "question": "How do annual and monthly billing differ in price and payment timing?",
+    "ground_truth": "Annual billing receives a 20 percent discount and is invoiced upfront for the full term, while monthly billing has no discount.",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_context": [
+      "pricing"
+    ],
+    "answer": "Annual billing offers a 20% discount on monthly payments, while monthly plans have no discount but require upfront invoices for the full term.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6893400549888611,
+      "correctness": 0.8468036460876465,
+      "token_f1": 0.6,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:54:18.402928Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.75,
+          "reason": "Correctly states that annual billing offers a 20% discount on monthly payments.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.75,
+          "reason": "Contains all necessary information about the differences between annual and monthly billing.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.75,
+          "reason": "Supports the comparison with the provided context.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.75,
+          "reason": "Clear and organized text.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.75,
+          "reason": "No unnecessary words or repetitions.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9148885579109192,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6893400549888611,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.8468036460876465
+    },
+    "passed": true,
+    "latency_ms": 7252.861900022253,
+    "retrieval_latency_ms": 2735.1668999763206,
+    "rerank_latency_ms": 2708.030999987386,
+    "generation_latency_ms": 4517.662999918684,
+    "retrieved_ids": [
+      "pricing#a71cba82fc",
+      "pricing#600ad58452",
+      "pricing#72af003023",
+      "refund_policy#8c94666355",
+      "pricing#d1b8ca0a01"
+    ],
+    "retrieved_sources": [
+      "pricing / Annual billing",
+      "pricing / Usage overage",
+      "pricing",
+      "refund_policy / Refund window",
+      "pricing / Price changes"
+    ],
+    "contexts": [
+      "Annual billing\n\nAnnual billing receives a 20 percent discount compared with paying monthly for twelve months. Annual plans are invoiced upfront for the full term.\n\nUsage overage charges are not eligible for the annual discount. Only the base subscription fee is discounted.",
+      "Usage overage\n\nAPI calls beyond the plan quota are billed at $0.002 per call. Overage is metered continuously and billed monthly in arrears, regardless of whether the subscription itself is billed monthly or annually.",
+      "Northwind Analytics is sold as a monthly or annual subscription. All prices are in US dollars and exclude applicable taxes.",
+      "Refund window\n\nCustomers can request a refund within 30 days of their initial purchase. The 30 day window starts on the date the first invoice is paid.\n\nFor annual plans, a pro-rated refund is also available within 30 days of an annual renewal date.",
+      "Price changes\n\nNorthwind gives at least 60 days written notice before any change to subscription pricing. Notice is sent to the billing contact on file."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q014",
+    "question": "Which hosting regions are available, and can a workspace change region later?",
+    "ground_truth": "The available regions are the United States (Virginia) and the European Union (Frankfurt); region selection cannot be changed afterwards without a migration project.",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_context": [
+      "security_compliance"
+    ],
+    "answer": "Region selection is made at workspace creation and cannot be changed afterwards without a migration project.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.3333333333333333,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7672402858734131,
+      "correctness": 0.7253418789190405,
+      "token_f1": 0.5882352941176471,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:54:39.836872Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "The answer correctly states that region selection is made at workspace creation and cannot be changed afterwards without a migration project.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "The answer provides all necessary information about region selection and migration projects.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "The answer supports its claims with accurate references to the provided context.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "The answer is well-organized and easy to understand.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "The answer is concise and does not include unnecessary details.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9122493390125387,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7672402858734131,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.7253418789190405
+    },
+    "passed": true,
+    "latency_ms": 6498.731400002725,
+    "retrieval_latency_ms": 2665.194100001827,
+    "rerank_latency_ms": 2641.6398000437766,
+    "generation_latency_ms": 3833.5035999771208,
+    "retrieved_ids": [
+      "security_compliance#0565afc0d0",
+      "release_notes_v3_2#4efa809335",
+      "data_retention#a48f187806",
+      "data_retention#9e386dddc7",
+      "data_retention#f8c180a153"
+    ],
+    "retrieved_sources": [
+      "security_compliance / Data residency",
+      "release_notes_v3_2 / p.1",
+      "data_retention / Active accounts",
+      "data_retention / After cancellation",
+      "data_retention / Deletion requests"
+    ],
+    "contexts": [
+      "Data residency\n\nCustomers can choose between two hosting regions: the United States (Virginia) and the European Union (Frankfurt). Region selection is made at workspace creation and cannot be changed afterwards without a migration project.",
+      "Northwind Analytics Release Notes v3.2\nRelease date: 2026-08-18\nHybrid search\nVersion 3.2 introduces hybrid retrieval, combining BM25 keyword matching with vector similarity search\nand fusing both ranked lists. Hybrid search improves recall on queries that contain product codes, error\nidentifiers, or rare terms.\nAudit log export\nEnterprise administrators can now export audit logs to an Amazon S3 bucket on a daily, weekly, or\nmonthly schedule.\nSSO session timeout\nThe SSO session timeout is now configurable per workspace. The default value is 12 hours and the\nmaximum allowed value is 30 days.\nPerformance",
+      "Active accounts\n\nCustomer data is retained for as long as the subscription is active. There is no automatic purging of active workspace data.",
+      "After cancellation\n\nWhen a subscription is cancelled, the workspace is placed in a read-only state for 30 days. Customer data is permanently deleted 30 days after the cancellation date. During the 30 day window the customer can export data or reactivate the subscription.",
+      "Deletion requests\n\nCustomers can submit a right-to-erasure request from the workspace settings page. Verified erasure requests are completed within 14 days, except where a legal hold or statutory retention obligation applies."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q015",
+    "question": "Which support tiers include 24/7 coverage?",
+    "ground_truth": "Only Enterprise support is staffed 24 hours a day, 7 days a week; Premium covers weekdays around the clock but not weekends.",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_context": [
+      "support_sla"
+    ],
+    "answer": "Premium support includes 24/7 support at no additional charge.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.752190113067627,
+      "correctness": 0.5284930493150438,
+      "token_f1": 0.14285714285714285,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:55:00.224710Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.0,
+          "reason": "The answer does not cover premium support as it states \"Premium supports 24/7 coverage\" while the reference says \"Premium support costs 15% of the annual contract value.\"",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.0,
+          "reason": "The answer lacks information about premium support.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.0,
+          "reason": "The answer relies on incorrect information about premium support.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.0,
+          "reason": "The answer is unclear and contains multiple errors.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.0,
+          "reason": "The answer is concise but lacks essential details.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.879711980010782,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.752190113067627,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.5284930493150438
+    },
+    "passed": false,
+    "latency_ms": 5626.509299967438,
+    "retrieval_latency_ms": 2388.734900043346,
+    "rerank_latency_ms": 2367.873499984853,
+    "generation_latency_ms": 3237.7322000684217,
+    "retrieved_ids": [
+      "support_sla#8e480c6fac",
+      "support_sla#01639a5b09",
+      "security_compliance#b2ce5dda13",
+      "security_compliance#0835ce66ab",
+      "support_sla#1f24c6da80"
+    ],
+    "retrieved_sources": [
+      "support_sla / Support tiers",
+      "support_sla / Coverage hours",
+      "security_compliance / Authentication",
+      "security_compliance / Encryption",
+      "support_sla / Severity definitions"
+    ],
+    "contexts": [
+      "Support tiers\n\nStandard support is included with Starter and Growth plans. Premium support costs 15 percent of the annual contract value. Enterprise plans include 24/7 support at no additional charge.",
+      "Coverage hours\n\nStandard support is staffed 9:00 to 18:00 Eastern Time on weekdays, excluding public holidays.\n\nPremium support is staffed 24 hours a day on weekdays and 8 hours on weekends.\n\nEnterprise support is staffed 24 hours a day, 7 days a week, including holidays.",
+      "Authentication\n\nSingle sign-on is supported through SAML 2.0 and OpenID Connect. SCIM 2.0 user provisioning is available on the Enterprise plan only.\n\nMulti-factor authentication is mandatory for all administrator accounts and optional for standard users.",
+      "Encryption\n\nCustomer data is encrypted at rest using AES-256. Data in transit is protected with TLS 1.3. Encryption keys are managed in a dedicated key management service and rotated every 90 days.",
+      "Severity definitions\n\nP1 means the production service is unavailable or customer data loss has occurred. P2 means the service is significantly degraded but still usable. P3 means a question, documentation request, or minor defect."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q016",
+    "question": "If a Growth customer exceeds their monthly API quota by 10,000 calls, how much extra will they pay?",
+    "ground_truth": "Overage is billed at $0.002 per call, so 10,000 extra calls cost $20.",
+    "category": "multi-hop",
+    "difficulty": "hard",
+    "expected_context": [
+      "pricing"
+    ],
+    "answer": "$0.002 per call * 10,000 calls = $20.00\nTherefore, if a Growth customer exceeds their monthly API quota by 10,000 calls, they will pay an additional $20.00.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.3333333333333333,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9348613023757935,
+      "correctness": 0.6103073438008626,
+      "token_f1": 0.27777777777777773,
+      "unsupported_sentences": 0,
+      "total_sentences": 2,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:55:25.137883Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.5,
+          "reason": "The calculation is correct as it multiplies the overage rate by the number of calls.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.5,
+          "reason": "The answer provides all necessary information about the overage rate and the cost calculation.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.5,
+          "reason": "The explanation is clear and based on the provided context.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.5,
+          "reason": "The language is straightforward and easy to understand.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.5,
+          "reason": "The answer is concise but not overly wordy.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9285183620452881,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9348613023757935,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.6103073438008626
+    },
+    "passed": true,
+    "latency_ms": 10437.607100000605,
+    "retrieval_latency_ms": 2142.2747999895364,
+    "rerank_latency_ms": 2114.188800100237,
+    "generation_latency_ms": 8295.306700048968,
+    "retrieved_ids": [
+      "pricing#600ad58452",
+      "pricing#f7d26ead83",
+      "pricing#b15e74a0a2",
+      "support_sla#4dd27a921d",
+      "onboarding_migration#0fc5586768"
+    ],
+    "retrieved_sources": [
+      "pricing / Usage overage",
+      "pricing / Plans",
+      "pricing / Additional seats",
+      "support_sla / Uptime commitment",
+      "onboarding_migration / Standard onboarding"
+    ],
+    "contexts": [
+      "Usage overage\n\nAPI calls beyond the plan quota are billed at $0.002 per call. Overage is metered continuously and billed monthly in arrears, regardless of whether the subscription itself is billed monthly or annually.",
+      "Plans\n\nThe Starter plan costs $49 per month and includes 5 seats, 10,000 API calls per month, and 10 GB of storage.\n\nThe Growth plan costs $199 per month and includes 25 seats, 100,000 API calls per month, and 100 GB of storage.\n\nThe Enterprise plan uses custom pricing negotiated per contract. Enterprise includes unlimited seats, a negotiated API quota, dedicated infrastructure options, and a designated solutions engineer.",
+      "Additional seats\n\nOn the Growth plan, additional seats beyond the included 25 cost $12 per seat per month.",
+      "Uptime commitment\n\nNorthwind commits to 99.9 percent monthly uptime for the API and the web application. If monthly uptime falls below this commitment, the customer receives a service credit of 10 percent of the monthly fee for each additional 0.5 percent below 99.9 percent.",
+      "Standard onboarding\n\nA Growth customer typically completes standard onboarding in 2 weeks. The process covers workspace configuration, connector setup, first dashboard, and a team handover session.\n\nEnterprise onboarding typically takes 4 to 6 weeks and includes architecture review, security review, and a staged rollout plan."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q017",
+    "question": "A customer on a monthly plan cancels on day 10 of their subscription. Can they get a refund, and when is their data deleted?",
+    "ground_truth": "Yes, because the cancellation falls inside the 30 day refund window, and their data is permanently deleted 30 days after the cancellation date.",
+    "category": "multi-hop",
+    "difficulty": "hard",
+    "expected_context": [
+      "refund_policy",
+      "data_retention"
+    ],
+    "answer": "Yes, a customer on a monthly plan can get a refund. Their data will be deleted 30 days after the cancellation date.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 0.5,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 2,
+      "expected_retrieved": 2,
+      "expected_total": 2
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9135043621063232,
+      "correctness": 0.7967199388303254,
+      "token_f1": 0.5263157894736842,
+      "unsupported_sentences": 0,
+      "total_sentences": 2,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:55:45.226904Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.75,
+          "reason": "The answer correctly states that refunds can be granted if the cancellation occurs within the 30-day refund window.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.75,
+          "reason": "The answer provides all necessary information about the refund process.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.75,
+          "reason": "The answer supports its claims with relevant context.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.75,
+          "reason": "The answer is clear and organized.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.75,
+          "reason": "The answer is concise and to the point.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9522088632458134,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9135043621063232,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.7967199388303254
+    },
+    "passed": true,
+    "latency_ms": 7080.768199986778,
+    "retrieval_latency_ms": 2451.635100063868,
+    "rerank_latency_ms": 2415.792700019665,
+    "generation_latency_ms": 4629.101000027731,
+    "retrieved_ids": [
+      "data_retention#9e386dddc7",
+      "data_retention#99fe317855",
+      "refund_policy#8c94666355",
+      "refund_policy#7a5701e451",
+      "data_retention#a48f187806"
+    ],
+    "retrieved_sources": [
+      "data_retention / After cancellation",
+      "data_retention / Backups",
+      "refund_policy / Refund window",
+      "refund_policy / Downgrades and cancellations",
+      "data_retention / Active accounts"
+    ],
+    "contexts": [
+      "After cancellation\n\nWhen a subscription is cancelled, the workspace is placed in a read-only state for 30 days. Customer data is permanently deleted 30 days after the cancellation date. During the 30 day window the customer can export data or reactivate the subscription.",
+      "Backups\n\nEncrypted backups are retained for 35 days on a rolling basis. Backups are stored in the same region as the workspace. Deleted customer data ages out of backups within the 35 day retention period and is not restored on request.",
+      "Refund window\n\nCustomers can request a refund within 30 days of their initial purchase. The 30 day window starts on the date the first invoice is paid.\n\nFor annual plans, a pro-rated refund is also available within 30 days of an annual renewal date.",
+      "Downgrades and cancellations\n\nDowngrades take effect at the next renewal date and do not produce a partial refund for the current period. Cancellations stop future billing but do not refund the current billing period unless the request falls inside the 30 day refund window.",
+      "Active accounts\n\nCustomer data is retained for as long as the subscription is active. There is no automatic purging of active workspace data."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q018",
+    "question": "Does the 20 percent annual discount apply to API overage charges?",
+    "ground_truth": "No. Only the base subscription fee is discounted; usage overage charges are billed monthly at $0.002 per call and are not eligible for the annual discount.",
+    "category": "multi-hop",
+    "difficulty": "medium",
+    "expected_context": [
+      "pricing"
+    ],
+    "answer": "Yes, the 20 percent annual discount applies to API overage charges.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9631378054618835,
+      "correctness": 0.6125387974106549,
+      "token_f1": 0.23529411764705882,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:56:07.477822Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.5,
+          "reason": "The answer correctly states that the 20% annual discount applies to API overage charges.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.5,
+          "reason": "The answer provides all necessary information about the discount but lacks some specific details like the exact amount applied.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.5,
+          "reason": "The answer does not provide any detailed explanation or examples of how the discount works.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.5,
+          "reason": "The answer is clear and easy to understand, but it could benefit from more specific explanations.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.5,
+          "reason": "The answer is concise but doesn't go into great depth about the specifics of the discount.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9345083807039749,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9631378054618835,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.6125387974106549
+    },
+    "passed": true,
+    "latency_ms": 5466.09460003674,
+    "retrieval_latency_ms": 2005.9420000761747,
+    "rerank_latency_ms": 1985.1867000106722,
+    "generation_latency_ms": 3460.1225000806153,
+    "retrieved_ids": [
+      "pricing#a71cba82fc",
+      "pricing#600ad58452",
+      "refund_policy#116834daa8",
+      "pricing#f7d26ead83",
+      "refund_policy#75980aa2ac"
+    ],
+    "retrieved_sources": [
+      "pricing / Annual billing",
+      "pricing / Usage overage",
+      "refund_policy / Exclusions",
+      "pricing / Plans",
+      "refund_policy / Chargebacks"
+    ],
+    "contexts": [
+      "Annual billing\n\nAnnual billing receives a 20 percent discount compared with paying monthly for twelve months. Annual plans are invoiced upfront for the full term.\n\nUsage overage charges are not eligible for the annual discount. Only the base subscription fee is discounted.",
+      "Usage overage\n\nAPI calls beyond the plan quota are billed at $0.002 per call. Overage is metered continuously and billed monthly in arrears, regardless of whether the subscription itself is billed monthly or annually.",
+      "Exclusions\n\nThe following are not refundable: add-on services, professional services engagements, overage charges for API usage, and custom development work.",
+      "Plans\n\nThe Starter plan costs $49 per month and includes 5 seats, 10,000 API calls per month, and 10 GB of storage.\n\nThe Growth plan costs $199 per month and includes 25 seats, 100,000 API calls per month, and 100 GB of storage.\n\nThe Enterprise plan uses custom pricing negotiated per contract. Enterprise includes unlimited seats, a negotiated API quota, dedicated infrastructure options, and a designated solutions engineer.",
+      "Chargebacks\n\nCustomers are asked to contact billing support before filing a chargeback. Accounts with an open chargeback may have API access suspended until the dispute is resolved."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q019",
+    "question": "An Enterprise customer needs SCIM provisioning and 24/7 support. Which plan features cover these needs?",
+    "ground_truth": "SCIM 2.0 provisioning is available on the Enterprise plan, and Enterprise plans include 24/7 support at no additional charge.",
+    "category": "multi-hop",
+    "difficulty": "hard",
+    "expected_context": [
+      "security_compliance",
+      "support_sla"
+    ],
+    "answer": "The Enterprise plan features SCIM provisioning and 24/7 support.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 0.5,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 2,
+      "expected_retrieved": 2,
+      "expected_total": 2
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8856457999733567,
+      "correctness": 0.7849654009917616,
+      "token_f1": 0.5384615384615385,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:56:28.928091Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.5,
+          "reason": "The answer correctly identifies that the Enterprise plan includes SCIM provisioning and 24/7 support.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.5,
+          "reason": "The answer provides a concise summary of the key points about the Enterprise plan's features.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.5,
+          "reason": "The answer supports its claims by mentioning specific features like SCIM provisioning and 24/7 support.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.5,
+          "reason": "The answer is well-organized and easy to understand.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.5,
+          "reason": "The answer is brief but comprehensive.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9448739701434357,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8856457999733567,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.7849654009917616
+    },
+    "passed": true,
+    "latency_ms": 6241.963200038299,
+    "retrieval_latency_ms": 2716.315499972552,
+    "rerank_latency_ms": 2688.1679000798613,
+    "generation_latency_ms": 3525.616299943067,
+    "retrieved_ids": [
+      "support_sla#8e480c6fac",
+      "security_compliance#b2ce5dda13",
+      "onboarding_migration#0fc5586768",
+      "onboarding_migration#8757a14786",
+      "pricing#f7d26ead83"
+    ],
+    "retrieved_sources": [
+      "support_sla / Support tiers",
+      "security_compliance / Authentication",
+      "onboarding_migration / Standard onboarding",
+      "onboarding_migration / Dedicated resources",
+      "pricing / Plans"
+    ],
+    "contexts": [
+      "Support tiers\n\nStandard support is included with Starter and Growth plans. Premium support costs 15 percent of the annual contract value. Enterprise plans include 24/7 support at no additional charge.",
+      "Authentication\n\nSingle sign-on is supported through SAML 2.0 and OpenID Connect. SCIM 2.0 user provisioning is available on the Enterprise plan only.\n\nMulti-factor authentication is mandatory for all administrator accounts and optional for standard users.",
+      "Standard onboarding\n\nA Growth customer typically completes standard onboarding in 2 weeks. The process covers workspace configuration, connector setup, first dashboard, and a team handover session.\n\nEnterprise onboarding typically takes 4 to 6 weeks and includes architecture review, security review, and a staged rollout plan.",
+      "Dedicated resources\n\nEnterprise customers receive a designated solutions engineer during onboarding and for the first 90 days after go-live.",
+      "Plans\n\nThe Starter plan costs $49 per month and includes 5 seats, 10,000 API calls per month, and 10 GB of storage.\n\nThe Growth plan costs $199 per month and includes 25 seats, 100,000 API calls per month, and 100 GB of storage.\n\nThe Enterprise plan uses custom pricing negotiated per contract. Enterprise includes unlimited seats, a negotiated API quota, dedicated infrastructure options, and a designated solutions engineer."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q020",
+    "question": "Which release introduced hybrid search, and what retrieval methods does it combine?",
+    "ground_truth": "Release v3.2 introduced hybrid search, which combines BM25 and vector retrieval.",
+    "category": "multi-hop",
+    "difficulty": "medium",
+    "expected_context": [
+      "release_notes_v3_2"
+    ],
+    "answer": "Northwind Analytics Release Notes v3.2 introduced hybrid search, which combines BM25 keyword matching with vector similarity search.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.25,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7854042393451023,
+      "correctness": 0.824757361808871,
+      "token_f1": 0.6428571428571428,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:56:47.909674Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "Correctly states the introduction of hybrid search.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "Provides a clear description of how hybrid search works.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "Supports the use of the retrieved context to explain the method.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "Well-organized text.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "No unnecessary words or repetitions.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9307944521403511,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7854042393451023,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.824757361808871
+    },
+    "passed": true,
+    "latency_ms": 7502.555900020525,
+    "retrieval_latency_ms": 2642.0861000660807,
+    "rerank_latency_ms": 2615.017500007525,
+    "generation_latency_ms": 4860.436800052412,
+    "retrieved_ids": [
+      "release_notes_v3_2#4efa809335",
+      "security_compliance#b2ce5dda13",
+      "data_retention#7f4015d813",
+      "onboarding_migration#18494289ad",
+      "security_compliance#58d116c1fa"
+    ],
+    "retrieved_sources": [
+      "release_notes_v3_2 / p.1",
+      "security_compliance / Authentication",
+      "data_retention / Export formats",
+      "onboarding_migration / Migration",
+      "security_compliance / Penetration testing"
+    ],
+    "contexts": [
+      "Northwind Analytics Release Notes v3.2\nRelease date: 2026-08-18\nHybrid search\nVersion 3.2 introduces hybrid retrieval, combining BM25 keyword matching with vector similarity search\nand fusing both ranked lists. Hybrid search improves recall on queries that contain product codes, error\nidentifiers, or rare terms.\nAudit log export\nEnterprise administrators can now export audit logs to an Amazon S3 bucket on a daily, weekly, or\nmonthly schedule.\nSSO session timeout\nThe SSO session timeout is now configurable per workspace. The default value is 12 hours and the\nmaximum allowed value is 30 days.\nPerformance",
+      "Authentication\n\nSingle sign-on is supported through SAML 2.0 and OpenID Connect. SCIM 2.0 user provisioning is available on the Enterprise plan only.\n\nMulti-factor authentication is mandatory for all administrator accounts and optional for standard users.",
+      "Export formats\n\nData can be exported as CSV or JSON at any time. Export files are available for download for 7 days before they are removed from temporary storage.",
+      "Migration\n\nHistorical data can be imported through CSV upload or the bulk import API. A single CSV import file supports up to 1,000,000 rows. Larger datasets are split into multiple files or streamed through the bulk import job API.\n\nNorthwind supports backfilling up to 24 months of historical data for supported sources.",
+      "Penetration testing\n\nA third party penetration test is performed every year. An executive summary of the most recent test is available to customers on request. Critical findings must be remediated within 30 days."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q021",
+    "question": "What caused the April 2026 incident and what changes did Northwind make afterwards?",
+    "ground_truth": "The incident was caused by database connection pool exhaustion from a misconfigured autoscaler; Northwind raised pool limits, introduced canary deployments, and tightened alert thresholds.",
+    "category": "multi-hop",
+    "difficulty": "hard",
+    "expected_context": [
+      "incident_postmortem_2026_04"
+    ],
+    "answer": "The April 2026 incident was caused by a 47-minute outage due to the Northwind Analytics dashboard and public API being unavailable for customers in the US region. This resulted in approximately 3.4% of requests failing, which led to no customer data loss or corruption. Northwind gave at least 60 days written notice before any price changes, and it also committed to 99.9 percent monthly uptime for both the API and the web application.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.25,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7606543302536011,
+      "correctness": 0.5155835605739207,
+      "token_f1": 0.1348314606741573,
+      "unsupported_sentences": 0,
+      "total_sentences": 3,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:57:19.243692Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "The answer correctly identifies the cause of the April 2026 incident as a 47-minute outage due to the Northwind Analytics dashboard and public API being unavailable.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "The answer provides a detailed explanation of the incident, including the causes and outcomes.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "The answer supports its claims with relevant information from the provided context.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "The answer is well-organized and free of filler text.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "The answer is concise and avoids unnecessary details.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.8794684001368084,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7606543302536011,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.5155835605739207
+    },
+    "passed": false,
+    "latency_ms": 14453.241000068374,
+    "retrieval_latency_ms": 2559.525500051677,
+    "rerank_latency_ms": 2534.0857000555843,
+    "generation_latency_ms": 11893.682699999772,
+    "retrieved_ids": [
+      "incident_postmortem_2026_04#eddc8f677d",
+      "pricing#d1b8ca0a01",
+      "incident_postmortem_2026_04#506bf3d318",
+      "onboarding_migration#9c2210055e",
+      "support_sla#4dd27a921d"
+    ],
+    "retrieved_sources": [
+      "incident_postmortem_2026_04 / Summary",
+      "pricing / Price changes",
+      "incident_postmortem_2026_04",
+      "onboarding_migration / Validation",
+      "support_sla / Uptime commitment"
+    ],
+    "contexts": [
+      "Summary\n\nOn 2026-04-12 the Northwind Analytics dashboard and public API were unavailable for customers in the US region for 47 minutes, from 14:06 to 14:53 Eastern Time. Approximately 3.4 percent of requests during the window failed. No customer data was lost or corrupted.",
+      "Price changes\n\nNorthwind gives at least 60 days written notice before any change to subscription pricing. Notice is sent to the billing contact on file.",
+      "Incident date: 2026-04-12. Total duration: 47 minutes.",
+      "Validation\n\nAfter an import, Northwind produces a data validation report within 3 business days. The report compares row counts, schema mapping, and rejected records.",
+      "Uptime commitment\n\nNorthwind commits to 99.9 percent monthly uptime for the API and the web application. If monthly uptime falls below this commitment, the customer receives a service credit of 10 percent of the monthly fee for each additional 0.5 percent below 99.9 percent."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q022",
+    "question": "Summarize the charges and services that are excluded from refunds.",
+    "ground_truth": "Refunds exclude add-on services, professional services engagements, API overage charges, and custom development work.",
+    "category": "summarization",
+    "difficulty": "medium",
+    "expected_context": [
+      "refund_policy"
+    ],
+    "answer": "The following are not refundable: add-on services, professional services engagements, overage charges for API usage, and custom development work.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.5,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7120449542999268,
+      "correctness": 0.8299455046653746,
+      "token_f1": 0.75,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:57:44.680790Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.75,
+          "reason": "The answer correctly summarizes the exclusions from refunds, covering all relevant points including add-on services, professional services engagements, overage charges for API usage, and custom development work.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.75,
+          "reason": "The answer provides a comprehensive list of exclusions from refunds, including all mentioned items.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.75,
+          "reason": "The information provided is based on the given context and does not contain any inventions or fabricated claims.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.75,
+          "reason": "The answer is well-organized and easy to understand, with clear and concise language.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.75,
+          "reason": "The answer contains only one complete sentence, which is sufficient for summarizing the exclusions from refunds.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9169008165597915,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7120449542999268,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.8299455046653746
+    },
+    "passed": true,
+    "latency_ms": 6993.2682000799105,
+    "retrieval_latency_ms": 2744.7216000873595,
+    "rerank_latency_ms": 2720.287900068797,
+    "generation_latency_ms": 4248.515799990855,
+    "retrieved_ids": [
+      "refund_policy#116834daa8",
+      "pricing#72af003023",
+      "refund_policy#7a5701e451",
+      "refund_policy#e37bc26653",
+      "pricing#a71cba82fc"
+    ],
+    "retrieved_sources": [
+      "refund_policy / Exclusions",
+      "pricing",
+      "refund_policy / Downgrades and cancellations",
+      "refund_policy / How to request a refund",
+      "pricing / Annual billing"
+    ],
+    "contexts": [
+      "Exclusions\n\nThe following are not refundable: add-on services, professional services engagements, overage charges for API usage, and custom development work.",
+      "Northwind Analytics is sold as a monthly or annual subscription. All prices are in US dollars and exclude applicable taxes.",
+      "Downgrades and cancellations\n\nDowngrades take effect at the next renewal date and do not produce a partial refund for the current period. Cancellations stop future billing but do not refund the current billing period unless the request falls inside the 30 day refund window.",
+      "How to request a refund\n\nRefund requests must be submitted through the support portal or by email to billing@northwindanalytics.com. Each request must include the invoice ID and the workspace ID.",
+      "Annual billing\n\nAnnual billing receives a 20 percent discount compared with paying monthly for twelve months. Annual plans are invoiced upfront for the full term.\n\nUsage overage charges are not eligible for the annual discount. Only the base subscription fee is discounted."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q023",
+    "question": "Summarize Northwind's security certifications and core data protection controls.",
+    "ground_truth": "Northwind holds SOC 2 Type II and ISO/IEC 27001 certification, encrypts data at rest with AES-256 and in transit with TLS 1.3, rotates keys every 90 days, requires MFA for administrators, and performs annual third party penetration tests.",
+    "category": "summarization",
+    "difficulty": "hard",
+    "expected_context": [
+      "security_compliance"
+    ],
+    "answer": "Northwind Analytics holds SOC 2 Type II certification, which is audited annually by an independent third party. It is also certified to ISO/IEC 27001, covering the platform, hosted service, and supporting infrastructure.",
+    "retrieval": {
+      "evaluable": true,
+      "hit": true,
+      "hit_rate": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "precision_at_k": 0.25,
+      "mrr": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "relevant_retrieved": 1,
+      "expected_retrieved": 1,
+      "expected_total": 1
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7608979940414429,
+      "correctness": 0.6822096708942861,
+      "token_f1": 0.35294117647058826,
+      "unsupported_sentences": 0,
+      "total_sentences": 2,
+      "is_refusal": false
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:58:08.019337Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 1.0,
+          "reason": "Correctly summarizes the Northwind's security certifications and core data protection controls.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 1.0,
+          "reason": "Provides all necessary information about Northwind's security measures.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 1.0,
+          "reason": "Supports the given facts with relevant examples and explanations.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 1.0,
+          "reason": "Well-organized text with proper grammar and punctuation.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 1.0,
+          "reason": "Concise summary without unnecessary details.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 0.9045110494424315,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7608979940414429,
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "correctness": 0.6822096708942861
+    },
+    "passed": true,
+    "latency_ms": 10088.142599910498,
+    "retrieval_latency_ms": 2606.9320999085903,
+    "rerank_latency_ms": 2583.267000038177,
+    "generation_latency_ms": 7481.175699969754,
+    "retrieved_ids": [
+      "security_compliance#ec913ce3f4",
+      "incident_postmortem_2026_04#eddc8f677d",
+      "integrations#951051f74a",
+      "support_sla#4dd27a921d",
+      "integrations#785e0d6304"
+    ],
+    "retrieved_sources": [
+      "security_compliance / Certifications",
+      "incident_postmortem_2026_04 / Summary",
+      "integrations / Native connectors",
+      "support_sla / Uptime commitment",
+      "integrations / Connector permissions"
+    ],
+    "contexts": [
+      "Certifications\n\nNorthwind Analytics holds SOC 2 Type II certification, audited annually by an independent third party. The full SOC 2 report is available to customers and prospects under a non-disclosure agreement.\n\nNorthwind is also certified to ISO/IEC 27001. The certificate scope covers the platform, the hosted service, and supporting infrastructure.",
+      "Summary\n\nOn 2026-04-12 the Northwind Analytics dashboard and public API were unavailable for customers in the US region for 47 minutes, from 14:06 to 14:53 Eastern Time. Approximately 3.4 percent of requests during the window failed. No customer data was lost or corrupted.",
+      "Native connectors\n\nNorthwind Analytics provides more than 40 native connectors. Core data warehouse connectors include Snowflake, BigQuery, Redshift, and PostgreSQL.\n\nBusiness application connectors include Salesforce, HubSpot, and Shopify. A Zapier connector is available in beta and is not covered by the uptime commitment.",
+      "Uptime commitment\n\nNorthwind commits to 99.9 percent monthly uptime for the API and the web application. If monthly uptime falls below this commitment, the customer receives a service credit of 10 percent of the monthly fee for each additional 0.5 percent below 99.9 percent.",
+      "Connector permissions\n\nConnectors use scoped credentials. Northwind recommends a read-only service account for warehouse connectors. Credentials are stored encrypted and are never displayed after they are saved."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q024",
+    "question": "What is Northwind Analytics' current share price on the NASDAQ?",
+    "ground_truth": "This information is not available in the provided documents. Northwind Analytics is a private company and no share price is published.",
+    "category": "unanswerable",
+    "difficulty": "easy",
+    "expected_context": [],
+    "answer": "I could not find this information in the provided documents.",
+    "retrieval": {
+      "evaluable": false,
+      "hit": false,
+      "hit_rate": 0.0,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "relevant_retrieved": 0,
+      "expected_retrieved": 0,
+      "expected_total": 0
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": null,
+      "correctness": 1.0,
+      "token_f1": null,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": true
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:58:29.943115Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.0,
+          "reason": "The answer does not provide accurate information about Northwind Analytics' current share price on the NASDAQ.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.0,
+          "reason": "The answer is incomplete and lacks specific details about the share price.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.0,
+          "reason": "The answer relies on general statements rather than referencing official sources.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.0,
+          "reason": "The answer is unclear and may be confusing due to its use of \"not available\" instead of providing a numerical figure.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.0,
+          "reason": "The answer is concise but lacks detailed information.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 1.0,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    "passed": true,
+    "latency_ms": 6128.67359991651,
+    "retrieval_latency_ms": 2562.2053999686614,
+    "rerank_latency_ms": 2539.5686998963356,
+    "generation_latency_ms": 3566.4329999126494,
+    "retrieved_ids": [
+      "pricing#72af003023",
+      "security_compliance#ec913ce3f4",
+      "release_notes_v3_2#4efa809335",
+      "integrations#951051f74a",
+      "incident_postmortem_2026_04#eddc8f677d"
+    ],
+    "retrieved_sources": [
+      "pricing",
+      "security_compliance / Certifications",
+      "release_notes_v3_2 / p.1",
+      "integrations / Native connectors",
+      "incident_postmortem_2026_04 / Summary"
+    ],
+    "contexts": [
+      "Northwind Analytics is sold as a monthly or annual subscription. All prices are in US dollars and exclude applicable taxes.",
+      "Certifications\n\nNorthwind Analytics holds SOC 2 Type II certification, audited annually by an independent third party. The full SOC 2 report is available to customers and prospects under a non-disclosure agreement.\n\nNorthwind is also certified to ISO/IEC 27001. The certificate scope covers the platform, the hosted service, and supporting infrastructure.",
+      "Northwind Analytics Release Notes v3.2\nRelease date: 2026-08-18\nHybrid search\nVersion 3.2 introduces hybrid retrieval, combining BM25 keyword matching with vector similarity search\nand fusing both ranked lists. Hybrid search improves recall on queries that contain product codes, error\nidentifiers, or rare terms.\nAudit log export\nEnterprise administrators can now export audit logs to an Amazon S3 bucket on a daily, weekly, or\nmonthly schedule.\nSSO session timeout\nThe SSO session timeout is now configurable per workspace. The default value is 12 hours and the\nmaximum allowed value is 30 days.\nPerformance",
+      "Native connectors\n\nNorthwind Analytics provides more than 40 native connectors. Core data warehouse connectors include Snowflake, BigQuery, Redshift, and PostgreSQL.\n\nBusiness application connectors include Salesforce, HubSpot, and Shopify. A Zapier connector is available in beta and is not covered by the uptime commitment.",
+      "Summary\n\nOn 2026-04-12 the Northwind Analytics dashboard and public API were unavailable for customers in the US region for 47 minutes, from 14:06 to 14:53 Eastern Time. Approximately 3.4 percent of requests during the window failed. No customer data was lost or corrupted."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  },
+  {
+    "question_id": "Q025",
+    "question": "Does Northwind offer a native mobile app for iOS and Android?",
+    "ground_truth": "This information is not available in the provided documents; the corpus does not describe any mobile application.",
+    "category": "unanswerable",
+    "difficulty": "easy",
+    "expected_context": [],
+    "answer": "I could not find this information in the provided documents.",
+    "retrieval": {
+      "evaluable": false,
+      "hit": false,
+      "hit_rate": 0.0,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "relevant_retrieved": 0,
+      "expected_retrieved": 0,
+      "expected_total": 0
+    },
+    "generation": {
+      "faithfulness": 1.0,
+      "answer_relevancy": null,
+      "correctness": 1.0,
+      "token_f1": null,
+      "unsupported_sentences": 0,
+      "total_sentences": 1,
+      "is_refusal": true
+    },
+    "deepeval": [],
+    "geval": {
+      "judge_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "timestamp": "2026-11-10T13:58:51.116560Z",
+      "criteria": [
+        {
+          "criterion": "correctness",
+          "score": 0.0,
+          "reason": "The answer is incorrect because it mentions that Northwind offers a native mobile app but does not provide specific information about iOS and Android.",
+          "raw_output": null
+        },
+        {
+          "criterion": "completeness",
+          "score": 0.0,
+          "reason": "The answer is incomplete as it does not mention the availability of native mobile apps for iOS and Android.",
+          "raw_output": null
+        },
+        {
+          "criterion": "groundedness",
+          "score": 0.0,
+          "reason": "The answer relies on general knowledge rather than referencing official sources.",
+          "raw_output": null
+        },
+        {
+          "criterion": "clarity",
+          "score": 0.0,
+          "reason": "The answer is unclear due to its lack of specificity regarding the availability of native mobile apps.",
+          "raw_output": null
+        },
+        {
+          "criterion": "conciseness",
+          "score": 0.0,
+          "reason": "The answer is concise but lacks detailed information.",
+          "raw_output": null
+        }
+      ],
+      "error_message": null
+    },
+    "error_analysis": {
+      "category": "none",
+      "explanation": "",
+      "failed": false
+    },
+    "overall_score": 1.0,
+    "overall_components": {
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    "passed": true,
+    "latency_ms": 5489.297299995087,
+    "retrieval_latency_ms": 2544.5957999909297,
+    "rerank_latency_ms": 2521.3348999386653,
+    "generation_latency_ms": 2944.664099952206,
+    "retrieved_ids": [
+      "integrations#951051f74a",
+      "onboarding_migration#18494289ad",
+      "pricing#72af003023",
+      "support_sla#4dd27a921d",
+      "onboarding_migration#5c5948273d"
+    ],
+    "retrieved_sources": [
+      "integrations / Native connectors",
+      "onboarding_migration / Migration",
+      "pricing",
+      "support_sla / Uptime commitment",
+      "onboarding_migration / Cutover"
+    ],
+    "contexts": [
+      "Native connectors\n\nNorthwind Analytics provides more than 40 native connectors. Core data warehouse connectors include Snowflake, BigQuery, Redshift, and PostgreSQL.\n\nBusiness application connectors include Salesforce, HubSpot, and Shopify. A Zapier connector is available in beta and is not covered by the uptime commitment.",
+      "Migration\n\nHistorical data can be imported through CSV upload or the bulk import API. A single CSV import file supports up to 1,000,000 rows. Larger datasets are split into multiple files or streamed through the bulk import job API.\n\nNorthwind supports backfilling up to 24 months of historical data for supported sources.",
+      "Northwind Analytics is sold as a monthly or annual subscription. All prices are in US dollars and exclude applicable taxes.",
+      "Uptime commitment\n\nNorthwind commits to 99.9 percent monthly uptime for the API and the web application. If monthly uptime falls below this commitment, the customer receives a service credit of 10 percent of the monthly fee for each additional 0.5 percent below 99.9 percent.",
+      "Cutover\n\nNorthwind recommends running the legacy system in parallel for at least 2 weeks before retiring it. There is no automatic cutover; the customer decides the go-live date."
+    ],
+    "prompt_version": "v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+    "error": null
+  }
+]

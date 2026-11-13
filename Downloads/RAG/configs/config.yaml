@@ -1,0 +1,74 @@
+# Base runtime configuration for RAG-Bench.
+# Experiment files (configs/experiments/*.yaml) deep-merge over this file.
+
+app:
+  name: RAG-Bench
+  environment: local
+  seed: 42
+
+paths:
+  documents: data/documents
+  datasets: data/datasets
+  cache: data/cache
+  reports: reports
+  database: data/ragbench.db
+
+logging:
+  level: INFO
+  dir: logs
+  json_sink: false
+
+embedding:
+  model: BAAI/bge-small-en-v1.5
+  batch_size: 32
+  normalize: true
+  device: cpu
+  query_instruction: "Represent this sentence for searching relevant passages: "
+
+chunking:
+  strategy: recursive
+  chunk_size: 700
+  chunk_overlap: 80
+
+retrieval:
+  strategy: vector
+  top_k: 5
+  candidate_k: 20
+  similarity_threshold: 0.0
+
+bm25:
+  enabled: false
+  k1: 1.5
+  b: 0.75
+
+hybrid:
+  enabled: false
+  fusion: rrf
+  rrf_k: 60
+  vector_weight: 0.6
+  bm25_weight: 0.4
+
+reranker:
+  enabled: false
+  model: BAAI/bge-reranker-base
+  top_n: 5
+
+generation:
+  provider: hf_local
+  model: Qwen/Qwen2.5-0.5B-Instruct
+  temperature: 0.0
+  max_new_tokens: 220
+  context_chunks: 5
+  prompt_version: v1
+  device: cpu
+
+# LangSmith tracing; the API key is read from LANGCHAIN_API_KEY, never from this file.
+tracing:
+  enabled: false
+  project: rag-bench
+  endpoint: https://api.smith.langchain.com
+  api_key_env: LANGCHAIN_API_KEY
+
+api:
+  host: 127.0.0.1
+  port: 8000
